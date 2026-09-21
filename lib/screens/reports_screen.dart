@@ -111,10 +111,10 @@ class _ReportsScreenState extends State<ReportsScreen> {
             await carReference.collection('documents').get();
 
         for (final document in documentSnapshot.docs) {
-          final data = document.data();
+  final data = document.data();
 
-          documentTotal += _getValue(data['valor']);
-        }
+  documentTotal += _getValue(data['value']);
+}
       }
 
       if (!mounted) return;

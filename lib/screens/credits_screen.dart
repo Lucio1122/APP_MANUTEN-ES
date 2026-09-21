@@ -22,10 +22,14 @@ class CreditsScreen extends StatelessWidget {
                   color: const Color(0xFF1976D2).withValues(alpha: 0.10),
                   borderRadius: BorderRadius.circular(24),
                 ),
-                child: const Icon(
-                  Icons.directions_car_filled,
-                  size: 48,
-                  color: Color(0xFF1976D2),
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(24),
+                  child: Image.asset(
+                    'assets/images/creditos.png',
+                    width: 90,
+                    height: 90,
+                    fit: BoxFit.cover,
+                  ),
                 ),
               ),
 
@@ -97,7 +101,7 @@ class CreditsScreen extends StatelessWidget {
               const SizedBox(height: 6),
 
               const Text(
-                'Jaqson',
+                'Jaqson Dalbosco',
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontSize: 19,
